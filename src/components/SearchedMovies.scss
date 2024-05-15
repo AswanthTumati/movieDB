@@ -1,0 +1,53 @@
+.searched-movies-container {
+    padding: 0 60px; 
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+  
+    @media screen and (max-width: 768px) {
+      padding: 0 20px; 
+      margin-bottom: 20px;
+    }
+  }
+
+  .search-results-header {
+    position: sticky;
+  top: 0;
+  background-color: black;
+  padding: 55px 0;
+  z-index: 1; 
+  color: white;
+  }
+
+  
+  
+  .searched-movies {
+    /* Removed display flex */
+  }
+  
+  .movie {
+    display: flex;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  
+    @media screen and (max-width: 768px) {
+      flex-direction: column; 
+    }
+  }
+  
+  .movie-poster {
+    max-width: 220px;
+    max-height: 270px;
+    margin-right: 20px;
+  
+    @media screen and (max-width: 768px) {
+      margin-right: 0; 
+      margin-bottom: 20px; 
+    }
+  }
+  
+  .movie-details {
+    flex: 1; 
+  }
+  

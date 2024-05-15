@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  color: white;
+
+  .navbar__item {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+
+      &:first-child {
+        padding-left: 50px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .navbar__item button {
+    background-color: transparent; 
+    border: none; 
+    color: inherit; 
+    font: inherit; 
+    cursor: pointer; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+  .navbar__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbar__search-container {
+    flex: 1; 
+    margin: 0 auto; 
+    max-width: 50%; 
+    display: flex;
+    justify-content: center; 
+  }
+
+  .search-box {
+    width: 100%; 
+    max-width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .navbar__search-container {
+      margin: 10px 0;
+    }
+
+    .navbar__item {
+      justify-content: center;
+      margin: 5px 0;
+    }
+  }
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal-content {
+    background-color: #b0a7a7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      h2 {
+        margin: 0;
+        color: #333;
+      }
+
+      .close {
+        cursor: pointer;
+        font-size: 24px;
+        color: #333;
+      }
+    }
+
+    .modal-body {
+      p {
+        margin: 0;
+        color: #131313;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #4ea0f7;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
